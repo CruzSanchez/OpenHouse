@@ -33,8 +33,9 @@ namespace OpenHouse
 			masterbedroom.Descriptions.Add("There is a big TV in here.");
 			Furniture TV = new Furniture();
 			TV.Descriptions.Add("It's a 4k UHD.");
+            TV.Descriptions.Add("It's a smart TV.");
 
-			house.Rooms.Add(thekitchen);
+            house.Rooms.Add(thekitchen);
 			house.Rooms.Add(thelivingroom);
 			house.Rooms.Add(masterbedroom);
 			thekitchen.Furnitures.Add(sink);
