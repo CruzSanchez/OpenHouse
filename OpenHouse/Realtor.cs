@@ -16,10 +16,15 @@ namespace OpenHouse
 		public bool UserAnswersYes(string question)
 		{
 			Speak(question);
-			string response = Console.ReadLine();
+			string response = Console.ReadLine().ToUpper();
+            string[] affirmativeOptions = { "Y", "YES", "SURE" };
 
-			return response == "yes";
+            foreach(var option in affirmativeOptions)
+            {
+                if (response == option) return true;
+            }
 
+            return false;
 		}
 
 		public void DescribeRoom(Room room)
