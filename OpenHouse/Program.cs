@@ -62,8 +62,6 @@ namespace OpenHouse
 				}
 				Console.ReadLine();
 			}
-
-			
 		}
 	}
 }
